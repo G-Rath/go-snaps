@@ -602,11 +602,13 @@ string hello world 2 1 2
 ---
 `
 
-		test.Equal(t, []string{
-			"TestDir1_3/TestSimple - 1",
-			"TestDir1_2/TestSimple - 1",
-			"TestDir1_3/TestSimple - 2",
-		},
+		test.Equal(
+			t,
+			[]string{
+				"TestDir1_3/TestSimple - 1",
+				"TestDir1_2/TestSimple - 1",
+				"TestDir1_3/TestSimple - 2",
+			},
 			obsolete,
 		)
 		test.NoError(t, err)
